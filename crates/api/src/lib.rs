@@ -1,7 +1,5 @@
 use rocket::{get, routes};
 
-extern crate middleware;
-
 #[get("/hello")]
 fn index(_a: middleware::GuardA) -> &'static str {
     "Hello, world!"
